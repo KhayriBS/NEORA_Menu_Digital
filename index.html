@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEORA | Menu Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/coffee.png">
+</head>
+<body>
+
+    <div class="decorative-circle"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <!-- SVG Logo Replication -->
+                <svg class="brand-icon" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer Arch -->
+                    <path d="M10 50 A 40 40 0 0 1 90 50 L 90 90 L 10 90 Z" stroke="#1A1A1A" stroke-width="2" fill="none"/>
+                    <!-- Inner Circle -->
+                    <circle cx="50" cy="65" r="28" stroke="#1A1A1A" stroke-width="2"/>
+                    <!-- Sun Rays (Top) -->
+                    <path d="M50 45 L 50 37" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M60 48 L 65 40" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M40 48 L 35 40" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M68 56 L 75 52" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M32 56 L 25 52" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Waves (Bottom) -->
+                    <path d="M35 70 Q 50 75 65 70" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M35 76 Q 50 81 65 76" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M35 82 Q 50 87 65 82" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h1 class="logo-text">NEORA</h1>
+            </div>
+
+            <nav class="category-nav">
+                <button class="nav-btn active"  onclick="filterMenu('cafe')">Café</button>
+                <button class="nav-btn" onclick="filterMenu('drinks')">Boissons</button>
+                <button class="nav-btn" onclick="filterMenu('cakes')">Pâtisseries</button>
+            </nav>
+        </header>
+
+        <main class="menu-grid">
+            
+            <!-- COFFEE SECTION -->
+            <div id="cafe" class="menu-section active">
+                <div class="menu-item">
+                    <img src="images/coffee.png" alt="Espresso" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Cappuccino Signature</h3>
+                            <span class="item-price">350 DA</span>
+                        </div>
+                        <p class="item-desc">Mousse de lait onctueuse, espresso riche et art latte.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/coffee.png" alt="Latte" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Café Latte</h3>
+                            <span class="item-price">300 DA</span>
+                        </div>
+                        <p class="item-desc">Lait chaud vapeur et espresso équilibré.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/coffee.png" alt="Americano" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Americano</h3>
+                            <span class="item-price">200 DA</span>
+                        </div>
+                        <p class="item-desc">Double shot dilué à l'eau chaude, goût intense.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DRINKS SECTION -->
+            <div id="drinks" class="menu-section">
+                <div class="menu-item">
+                    <img src="images/drink.png" alt="Mojito" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Blueberry Mocktail</h3>
+                            <span class="item-price">450 DA</span>
+                        </div>
+                        <p class="item-desc">Rafraîchissant, menthe fraîche et myrtilles sauvages.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drink.png" alt="Juice" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Jus d'Orange Pressé</h3>
+                            <span class="item-price">400 DA</span>
+                        </div>
+                        <p class="item-desc">100% naturel, pressé à la minute.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drink.png" alt="Iced Coffee" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Iced Caramel Macchiato</h3>
+                            <span class="item-price">480 DA</span>
+                        </div>
+                        <p class="item-desc">Café glacé vanille et nappage caramel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAKES SECTION -->
+            <div id="cakes" class="menu-section">
+                <div class="menu-item">
+                    <img src="images/cake.png" alt="Cake" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Truffle Chocolat</h3>
+                            <span class="item-price">550 DA</span>
+                        </div>
+                        <p class="item-desc">Chocolat noir intense, ganache fondante.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cake.png" alt="Cheesecake" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Cheesecake New York</h3>
+                            <span class="item-price">600 DA</span>
+                        </div>
+                        <p class="item-desc">Base biscuitée, crème onctueuse et coulis fruits rouges.</p>
+                    </div>
+                </div>
+
+                 <div class="menu-item">
+                    <img src="images/cake.png" alt="Tiramisu" class="item-img">
+                    <div class="item-details">
+                        <div class="item-header">
+                            <h3 class="item-title">Tiramisu Classique</h3>
+                            <span class="item-price">500 DA</span>
+                        </div>
+                        <p class="item-desc">Café, mascarpone et cacao amer.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>One more cup of COFFEE</p>
+            <p style="margin-top:5px; opacity:0.6;">© 2024 NEORA Café</p>
+        </footer>
+    </div>
+
+    <script>
+        function filterMenu(categoryName) {
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button (requires event target or iterating logic)
+            // Simplified: loop to find the one matching the text or using event delegation. 
+            // For simplicity here, I'll just set it on the finding by onclick logic or just pass 'this'
+            // Let's simpler:
+            event.target.classList.add('active');
+
+            // Hide all sections
+            const sections = document.querySelectorAll('.menu-section');
+            sections.forEach(sec => sec.classList.remove('active'));
+
+            // Show target section
+            document.getElementById(categoryName).classList.add('active');
+        }
+    </script>
+</body>
+</html>
